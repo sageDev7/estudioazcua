@@ -420,10 +420,12 @@
         }
 
         .video-section__content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            display: flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .video-section__text h2 {
@@ -434,14 +436,16 @@
             font-size: 1.1rem;
             line-height: 1.8;
             color: #666;
+            margin-bottom: 2rem;
         }
 
         .video-section__video {
-            margin-top: 0.2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
         }
 
         .video-section__video video {
-            width: 100%;
+            width: 80%;
             border: 2px solid var(--color-accent);
             box-shadow: var(--shadow-lg);
             margin-bottom: 1.5rem;
